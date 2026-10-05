@@ -1,3 +1,41 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><title>Privacy Policy</title></head>
-<body><h1>Privacy Policy</h1><p>This application is for personal use. It does not collect, store, or share any personal data. Google account credentials are handled by Google and rclone runs the sync locally.</p></body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Privacy Policy</title>
+<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem;line-height:1.6}h1{border-bottom:1px solid #ddd;padding-bottom:.5rem}h2{margin-top:1.6rem}</style></head>
+<body>
+<h1>Privacy Policy</h1>
+<p><strong>Effective date:</strong> 2026-01-01</p>
+
+<h2>1. Who we are</h2>
+<p>This application ("the App") is a personal-use instance of the open-source tool <a href="https://rclone.org">rclone</a>, operated by an individual for their own file synchronization between cloud storage and their private servers. The App has no website of its own beyond this documentation page, has no employees, and offers no services to third parties.</p>
+
+<h2>2. Data we collect</h2>
+<p>The App itself does <strong>not</strong> collect, transmit, or store any personal data on any server we control. Specifically:</p>
+<ul>
+<li><strong>No usage analytics, no tracking, no cookies, no advertising.</strong></li>
+<li><strong>Google Drive content:</strong> the App reads and writes files and metadata in the Google Drive account that you explicitly authorize, solely to perform the synchronization operation you configured. File contents and metadata are transferred directly between Google's servers and the machine where you run the App.</li>
+<li><strong>Authentication tokens:</strong> when you grant access, Google issues OAuth tokens (including a refresh token). These tokens are stored <em>only</em> in the local rclone configuration file on the machine where you run the App, protected by the operating system's file permissions. They are never sent anywhere other than Google's own OAuth and Drive APIs.</li>
+<li><strong>Log files:</strong> if you enable rclone logging, logs are written locally to a file path you choose and may contain file names processed during the sync. These logs never leave your machine unless you configure them to.</li>
+</ul>
+
+<h2>3. How we use data</h2>
+<p>Any data processed by the App is used for exactly one purpose: performing the file synchronization you configured between your Google Drive account and your own machine. There is no other use.</p>
+
+<h2>4. Data sharing</h2>
+<p>We do not sell, rent, share, or disclose any data to any third party, because no data is collected by us in the first place. The only third party involved in any data processing is Google LLC itself, in its capacity as the provider of the Drive service and the OAuth authorization service, under Google's own privacy policy. The App embeds no third-party SDKs, fonts, or external resources.</p>
+
+<h2>5. Data retention and deletion</h2>
+<ul>
+<li>Local files synced by the App remain under your control on your own machine; deleting them is done via the App or your operating system.</li>
+<li>OAuth tokens are stored only in the local rclone configuration file; you can delete them at any time by removing the remote from your rclone configuration.</li>
+<li>You can revoke the App's access entirely at any time at <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</li>
+</ul>
+
+<h2>6. Security</h2>
+<p>Tokens and configuration are stored locally and are protected by the operating system file permissions of the account running the App. The App communicates with Google only over HTTPS.</p>
+
+<h2>7. Changes to this policy</h2>
+<p>If this policy changes, the updated version will be published on this page.</p>
+
+<h2>8. Contact</h2>
+<p>For any question about this policy, open an issue in the GitHub repository hosting this page: <a href="https://github.com/qsgy-edge/rclone-home">https://github.com/qsgy-edge/rclone-home</a>.</p>
+</body></html>
